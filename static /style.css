@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: "Barbie", sans-serif;
+    background-color: #e8a9c1;
+    text-align: center;
+}
+
+header {
+    background: #f3f3f3;
+    padding: 20px;
+    font-size: 30px;
+    color: #d64b9a;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 40px;
+}
+
+.hero img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background-color: #d64b9a;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #b3367e;
+}
+
+.form-page {
+    background: linear-gradient(to bottom, #c57aa5, #e5c1d3);
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.form-title {
+    font-size: 50px;
+    background-color: #f2d3e3;
+    display: inline-block;
+    padding: 15px 60px;
+    border-radius: 40px;
+    margin-bottom: 60px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-box input {
+    width: 400px;
+    padding: 18px;
+    border-radius: 40px;
+    border: none;
+    background-color: #f2d3e3;
+    font-size: 14px;
+    text-align: center;
+}
+
+.submit-btn {
+    padding: 15px 60px;
+    border-radius: 40px;
+    border: none;
+    background-color: #d87093;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #ff4fc3;
+    color: white;
+}
