@@ -10,10 +10,10 @@
 
     <h1 class="form-title">REGISTER</h1>
 
-    <form class="form-box" id="registerForm">
-        <input type="email" placeholder="ENTER YOUR EMAIL" required>
-        <input type="password" placeholder="SET YOUR PASSWORD" required>
-        <input type="password" placeholder="CONFIRM YOUR PASSWORD" required>
+    <form class="form-box" method="POST" action="/register">
+        <input type="email" name="email" placeholder="ENTER YOUR EMAIL" required>
+        <input type="password" name="password" placeholder="SET YOUR PASSWORD" required>
+        <input type="password" name="confirm_password" placeholder="CONFIRM YOUR PASSWORD" required>
         <button type="submit" class="submit-btn">SUBMIT</button>
     </form>
 
