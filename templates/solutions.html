@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solutions - SHE-FIX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.cdnfonts.com/css/barbie" rel="stylesheet">
+</head>
+<body class="solutions-page">
+    <a href="/dashboard" class="back-btn">← Back to Dashboard</a>
+
+    <div class="solutions-header">
+        <h1 class="girlies-title">Girlies Helping Girlies</h1>
+        </div>
+    </div>
+
+    <div class="cards-grid">
+    <a href="/solutions/tyre" style="text-decoration: none; color: inherit;">
+        <div class="fix-card">
+            <div class="icon-circle"><img src="{{ url_for('static', filename='images/tyre.png') }}"></div>
+            <h3>tyre fixing</h3>
+        </div>
+    </a>
+
+    <a href="/solutions/fuse" style="text-decoration: none; color: inherit;">
+        <div class="fix-card">
+            <div class="icon-circle"><img src="{{ url_for('static', filename='images/fuse.png') }}"></div>
+            <h3>fuse fixing</h3>
+        </div>
+    </a>
+
+    <a href="/solutions/hostel" style="text-decoration: none; color: inherit;">
+        <div class="fix-card">
+            <div class="icon-circle"><img src="{{ url_for('static', filename='images/hostel.png') }}"></div>
+            <h3>hostel survival hacks</h3>
+        </div>
+    </a>
+
+    </div>
+
+</body>
+</html>

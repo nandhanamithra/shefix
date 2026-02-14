@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - SHE-FIX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dash-body">
+
+    <header class="top-nav">
+        <div class="search-container">
+        <i class="fa fa-search"></i>
+        <input type="text" name="q" placeholder="search" id="dashboard-search">
+    </div>
+        </div>
+        <div class="user-profile">
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </header>
+
+    <main class="dash-content">
+        <div class="welcome-section">
+            <h1 class="welcome-title">Hey Girlie!!!</h1>
+            <p class="welcome-text">
+                Hey bestie, welcome back!<br>
+                This is your safe little corner of the internet.<br>
+                Need help? Want advice? Looking for a glow-up<br>
+                tip or a quick fix guide?<br>
+                We've got you. Always. 💅✨<br>
+                Let's handle life — together.
+            </p>
+        </div>
+
+<div class="bubble-container">
+
+    <a href="/solutions" class="bubble pink-bubble solutions">
+        <i class="fa-regular fa-lightbulb"></i>
+        <span>solutions</span>
+    </a>
+
+    <a href="/community" class="bubble pink-bubble community">
+        <i class="fa-solid fa-users"></i>
+        <span>community</span>
+    </a>
+
+    <a href="/services" class="bubble pink-bubble services">
+        <i class="fa-solid fa-headset"></i>
+        <span>services</span>
+    </a>
+
+</div>
+
+        </div>
+    </main>
+
+    <div class="footer-lines"></div>
+
+</body>
+</html>
