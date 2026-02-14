@@ -1,20 +1,38 @@
+/* Register the custom font */
+@font-face {
+    font-family: 'FabulousPink';
+    src: url('fonts/Shooting Star.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'creamcake';
+    src: url('Cream Cake.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Apply it to your Headers */
+header h1, .hero-text h2 {
+    font-family: 'FabulousPink', sans-serif;
+    letter-spacing: 2px;
+}
 body {
+    background: linear-gradient(to bottom, #c57aa5, #e5c1d3);
     margin: 0;
-    font-family: "Barbie", sans-serif;
-    background-color: #e8a9c1;
+    font-family: "creamcake", sans-serif;
     text-align: center;
 }
 
 header {
-    background: #f3f3f3;
+    background: #f9b8dd;
     padding: 20px;
     font-size: 30px;
     color: #d64b9a;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .hero {
-    padding: 40px;
+    padding: 40x;
 }
 
 .hero img {
@@ -46,7 +64,7 @@ header {
     background: linear-gradient(to bottom, #c57aa5, #e5c1d3);
     text-align: center;
     padding-top: 80px;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'creamcake', cursive;
 }
 
 .form-title {
@@ -88,3 +106,431 @@ header {
     background-color: #ff4fc3;
     color: white;
 }
+
+.dashboard-body {
+    background: linear-gradient(135deg, #e8a9c1, #c57aa5);
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul { list-style: none; padding: 0; margin-top: 50px; }
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.sidebar ul li a:hover { background: rgba(255, 255, 255, 0.3); }
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Glassmorphism Cards */
+.stat-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.stat-number {
+    font-size: 3rem;
+    margin: 10px 0;
+    font-family: 'Luckiest Guy', cursive;
+}
+.error-msg {
+    color: #b3367e;
+    background-color: #ffdce8;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid #d64b9a;
+}
+
+/* Dashboard Background */
+.dash-body {
+    background-color: #da1e6c; /* Soft pink background */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Glassmorphism Top Nav */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+}
+
+.search-container {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.user-profile {
+    background: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* Welcome Text Styling */
+.dash-content {
+    display: flex;
+    padding: 100px 80px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.welcome-section {
+    max-width: 500px;
+}
+
+.welcome-title {
+    font-family: 'FabulousPink', cursive; /* Keeping your branding */
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Floating Bubbles */
+.bubble-container {
+    position: relative;
+    flex-grow: 1;
+}
+
+.bubble {
+    background: #f7a8ca;
+    padding: 40px 30px;
+    border-radius: 80px; /* Pill shape */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    position: absolute;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.bubble i { font-size: 30px; margin-bottom: 10px; }
+
+/* Positioning the bubbles like in the image */
+.solutions { top: -20px; left: 50px; }
+.community { top: -20px; left: 280px; }
+.services { top: 150px; left: 160px; }
+
+/* Bottom Decorative Stripes */
+.footer-lines {
+    height: 50px;
+    background: linear-gradient(to bottom, transparent 20%, white 20%, white 30%, transparent 30%, transparent 50%, white 50%, white 60%);
+    opacity: 0.6;
+}
+
+.bubble {
+    text-decoration: none;
+    color: inherit;
+    display: flex;   /* keep your layout working */
+}
+/* Solutions Page Background */
+.solutions-page {
+    background-color: #fbd6e5; /* Very light pink */
+    padding: 50px;
+}
+
+.solutions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.girlies-title {
+    background-color: #f7a8ca;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-family: 'FabulousPink', sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+
+
+/* Grid Layout */
+.cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* The Individual Cards */
+.fix-card {
+    background-color: #f7a8ca;
+    width: 280px;
+    height: 350px;
+    border-radius: 60px; /* Highly rounded corners like the image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.fix-card:hover {
+    transform: translateY(-10px);
+    background-color: #ff85b3;
+}
+
+.icon-circle {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.icon-circle img {
+    width: 100%;
+    height: auto;
+}
+
+.fix-card h3 {
+    font-family: 'creamcake', serif; /* Or similar serif font from image */
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+/* Guide Page Layout */
+.guide-page {
+    background-color: #fbd6e5;
+    padding: 20px;
+    font-family: 'creamcake', serif; /* Matching your image's font style */
+}
+
+.header-icon-large {
+    width: 100px;
+    height: auto;
+}
+
+.guide-pill {
+    background: #f7a8ca;
+    padding: 10px 60px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 2.5rem;
+    box-shadow: 4px 4px 0px white;
+}
+
+.guide-text-content {
+    max-width: 700px;
+    margin: 40px auto;
+    line-height: 1.6;
+}
+
+.step-list {
+    margin-top: 20px;
+}
+
+.step-list li {
+    margin-bottom: 15px;
+    list-style-type: none; /* We used <strong>Step X</strong> manually */
+}
+
+.safety-box, .video-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+.guide-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.col {
+    flex: 1;
+}
+
+.col h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+    border-bottom: 2px solid #f7a8ca;
+    display: inline-block;
+}
+
+.col ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.col ul li::before {
+    content: "• ";
+    color: #e9569d;
+    font-weight: bold;
+}
+
+.slay-btn-final {
+    display: block;
+    margin: 50px auto;
+    background: #f7a8ca;
+    padding: 15px 50px;
+    border-radius: 40px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 10px 20px rgba(233, 86, 157, 0.2);
+    cursor: pointer;
+}
+/* Safety & Services Page Container */
+.safety-page {
+    background-color: #fbd6e5; /* Light pink background from your images */
+    min-height: 100vh;
+    padding: 50px;
+    font-family: 'creamcake', serif; /* Matching the serif font in your designs */
+}
+
+/* Header Pill (Matches "Girlies Helping Girlies") */
+.safety-header-pill {
+    background-color: #f7a8ca;
+    padding: 15px 45px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 4px 4px 0px white; /* Subtle white shadow from design */
+}
+/* Grid for the three Safety cards */
+.safety-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+/* Individual Safety Card Style */
+.safety-card {
+    background-color: #f7a8ca;
+    width: 280px;
+    height: 350px;
+    border-radius: 60px; /* High-radius corners like your images */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none; /* Removes link underline */
+}
+
+.safety-card:hover {
+    transform: translateY(-10px);
+    background-color: #ff85b3; /* Darker pink on hover */
+}
+
+.safety-card h3 {
+    margin-top: 20px;
+    color: black;
+    font-size: 1.4rem;
+    text-align: center;
+}
+/* Container for the icon inside the card */
+.icon-holder {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-holder img {
+    width: 100%;
+    height: auto;
+}
+
+/* The Stars (Top Right Decoration) */
+.header-stars {
+    float: right;
+    display: flex;
+    gap: 5px;
+}
+
+.glitter-star {
+    font-size: 60px;
+    color: #e9569d;
+    text-shadow: 2px 2px white;
+    /* Adding different rotations for that "scattered" look */
+}
+
+.star-1 { transform: rotate(-10deg); }
+.star-2 { transform: rotate(15deg); margin-top: -15px; }
+.star-3 { transform: rotate(-5deg); }
