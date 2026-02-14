@@ -9,12 +9,29 @@
 <body class="form-page">
 
     <h1 class="form-title">LOG IN</h1>
+    
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <script>
+      alert("{{ messages[0] }}");
+    </script>
+  {% endif %}
+{% endwith %}
 
-    <form class="form-box" id="loginForm">
-        <input type="email" placeholder="ENTER YOUR EMAIL" required>
-        <input type="password" placeholder="PASSWORD" required>
+
+<form class="form-box" method="POST" action="/login">
+    </form>
+
+    <form class="form-box" method="POST" action="/login">
+        <input type="email" name="email" placeholder="ENTER YOUR EMAIL" required>
+        <input type="password" name="password" placeholder="PASSWORD" required>
         <button type="submit" class="submit-btn">SUBMIT</button>
     </form>
+<p style="margin-top: 15px;">
+    Don't have an account?
+    <a href="/register">Register here</a>
+</p>
+
 
 </body>
 </html>
